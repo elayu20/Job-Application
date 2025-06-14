@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div id="title-page">
+      <h1 id="title">Job Application Form</h1>
+      <br>
+      <p id="description">Please enter correct information in the form</p>
+    </div>
+
+    <div id="form-box">
+      <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <br>
+            <input class="input" type="text" id="name" required placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input id="email" class="input" type="email" required placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label id="number-label" for="number">Age</label>
+            <input id="number" class="input" type="number" placeholder="Age" min="16" max="65">
+        </div>
+
+        <div class="form-group">
+            <p id="ask-role">What is your current role?</p>
+            <select id="dropdown">
+                <option disabled="" selected="" value="">Select Current Role</option>
+                <option value="student">Student</option>
+                <option value="full-time">Full-Time</option>
+                <option value="part-time">Part-Time</option>
+                <option value="unemployed">Unemployed</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p id="ask-company">Have you worked for this company before?</p>
+            <label>
+                <input type="radio" name="company" class="company-option" value="no">No
+            </label>
+            <label>
+                <input type="radio" name="company" class="company-option" value="yes" >Yes
+            </label>
+            <label>
+                <input type="radio" name="company" class="company-option" value="other">Other
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p id="ask-transport">How do you get to work?</p>
+            <label>
+                <input type="checkbox" class="transport" value="personal vehicle" name="transport">Personal Vehicle
+            </label>
+            <label>
+                <input type="checkbox" class="transport" value="bike" name="transport">Bike
+            </label>
+            <label>
+                <input type="checkbox" class="transport" value="walking" name="transport">Walking
+            </label>
+            <label>
+                <input type="checkbox" class="transport" value="bus" name="transport">Bus
+            </label>
+            <label>
+                <input type="checkbox" class="transport" value="train" name="transport">Train
+            </label>
+            <lable>
+                <input type="checkbox" class="transport" value="other" name="transport">Other
+            </lable>
+        </div>
+
+        <div class="form-group">
+            <p id="ask-suggestions">Anything else we need to know about you?</p>
+            <textarea id="suggestions" name="extra-info" placeholder="Enter your suggestions here..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
